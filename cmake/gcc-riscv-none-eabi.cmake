@@ -7,9 +7,11 @@ set(CMAKE_C_COMPILER_ID GNU)
 set(CMAKE_CXX_COMPILER_ID GNU)
 
 # Some default GCC settings
-# arm-none-eabi- must be part of path environment
-set(TOOLCHAIN_PREFIX "/home/alanfans/Desktop/elink/WCH/CH32V003/MRS_Toolchain_Linux_x64_V210/RISC-V Embedded GCC12/bin/riscv-wch-elf-")
-#set(TOOLCHAIN_PREFIX                arm-none-eabi-)
+# riscv-none-eabi- must be part of path environment
+#如果没有配置环境变量，请修改为自己的risv编译工具地址
+#set(TOOLCHAIN_PATH "/home/alanfans/Desktop/elink/WCH/MRS_Toolchain_Linux_x64_V210/RISC-V Embedded GCC12/bin/")
+set(TOOLCHAIN_PATH)
+set(TOOLCHAIN_PREFIX                ${TOOLCHAIN_PATH}riscv-wch-elf-)
 
 set(CMAKE_C_COMPILER                ${TOOLCHAIN_PREFIX}gcc)
 set(CMAKE_ASM_COMPILER              ${CMAKE_C_COMPILER})

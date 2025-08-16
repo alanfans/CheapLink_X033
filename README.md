@@ -1,6 +1,9 @@
 # CheapLink_X033_cmake
  # 项目是由https://github.com/WuxiProject-offical/CheapLink_X033 修改而来，变更为cmake工程，没做测试
 一个廉价的CMSIS-DAP调试器实现。
+
+
+##### 自行修改wch编译工具地址：TOOLCHAIN_PATH
 To read English version of this file，please turn to [README.md](README.md)。
 
 ## 特性
